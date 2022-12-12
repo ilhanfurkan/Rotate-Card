@@ -13,7 +13,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 .main-card{
     position: relative;
@@ -30,13 +29,28 @@ body{
     box-shadow: 4px 7px 15px 1px #cacaca;
     transition: 1s;
 }
-.main-card:hover .card{
-    transform: rotateY(180deg);
-    opacity: 0;
+.kykRotateBtn{
+    height: 45px;
+    border-radius: 40% 0% 0% 40%;
+    background-color: rgb(110, 255, 255);
+    border:1px solid rgb(196, 196, 196);
+    box-shadow: -2px 4px 7px #bababa;
+    transition: 0.6s;
 }
-.main-card:hover .cmpcard{
-    transform: rotateY(360deg);
-    opacity: 1;
+.kykRotateBtn:hover{
+    background-color: aqua;
+}
+.cmpRotateBtn{
+    height: 45px;
+    border-radius: 0% 40% 40% 0%;
+    background-color: rgb(5, 150, 5);
+    color:white;
+    border:1px solid rgb(196, 196, 196);
+    box-shadow: 2px 4px 7px #bababa;
+    transition: 0.6s;
+}
+.cmpRotateBtn:hover{
+    background-color: green;
 }
 .photo{
     height: 24%;
@@ -58,11 +72,7 @@ body{
     z-index:2;
     transition: 2s;
 }
-.main-card:hover .surf{
-    top:-150px;
-    left:10px;
-    
-}
+
 .camping{
     width: 250px;
     transform: scale(0,0);
@@ -72,9 +82,7 @@ body{
     z-index:2;
     transition: 3s;
 }
-.main-card:hover .camping{
-    transform: scale(1,1);
-}
+
 .sportname{
     height:18%;
     position: relative;
@@ -172,9 +180,7 @@ body{
     top:-40px;
     transition: 3s;
 }
-.main-card:hover .fire{
-    transform: scale(1,1);
-}
+
 .cmpdetail{
     text-align: center;
     padding-left: 90px;

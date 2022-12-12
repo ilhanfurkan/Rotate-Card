@@ -6,15 +6,16 @@
     <title>Rotate Card</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='rotate.css'>
-    <script src='main.js'></script>
+    <script src='button.js'></script>
     <script src="https://kit.fontawesome.com/2c3103d0c4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
+        <div class="kykRotate" id="kykRotate"><button class="kykRotateBtn" id="kykRotateBtn" onclick="rotateKayaking('card','cmpcard','fire','camping','surf',)">Kayaking</button></div>
         <div class="main-card">
-        <div class="card">
+        <div id="card" class="card">
             <div class="photo">
-                <div class="photos"><img class="surf" src="kayaking.png" alt="kayaking"></div>
+                <div class="photos"><img id="surf" class="surf" src="kayaking.png" alt="kayaking"></div>
             </div>
             <div class="sportname"><div class="sportname-text">Kayaking</div><div class="circle"></div></div>
             <div class="detail"><sup>$</sup>39 / 4<sup>hrs</sup></div>
@@ -24,10 +25,10 @@
         
         </div>
         <!--Dont repeat yourself :)-->
-        <div class="cmpcard">
+        <div id="cmpcard" class="cmpcard">
             <div class="photo-camp">
-                <div class="photos"><img class="camping" src="camping.png" alt="camping"></div>
-                <div class="photo-fire"><img class="fire" src="fire.png" alt="camping"></div>
+                <div class="photos"><img id="camping" class="camping" src="camping.png" alt="camping"></div>
+                <div class="photo-fire"><img id="fire" class="fire" src="fire.png" alt="camping"></div>
             </div>
             <div class="sportname"><div class="sportname-text">Camping</div><div class="cmpcircle"></div></div>
             <div class="cmpdetail"><sup>$</sup>29 / 8<sup>hrs</sup></div>
@@ -37,6 +38,8 @@
         
         </div>
     </div>
+    <div class="cmpRotate" id="cmpRotate"><button class="cmpRotateBtn" id="cmpRotateBtn" onclick="rotateCamping('card','cmpcard','fire','camping','surf',)">Camping</button></div>
+
     </div>
 </body>
 </html>
