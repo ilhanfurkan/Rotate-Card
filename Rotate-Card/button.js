@@ -10,6 +10,7 @@ function rotateCamping(cardId,cmpCardId,fire,camping,surf){
 
     cmpCard.style.transform="rotateY(360deg)";
     cmpCard.style.opacity="1";
+	cmpCard.style.zIndex="4";
     
     fire.style.transform="scale(1,1)";
 
@@ -31,6 +32,7 @@ function rotateKayaking(cardId,cmpCardId,fire,camping,surf){
 
     cmpCard.style.transform="rotateY(180deg)";
     cmpCard.style.opacity="0";
+	cmpCard.style.zIndex="0";
     
     fire.style.transform="scale(0,0)";
 
